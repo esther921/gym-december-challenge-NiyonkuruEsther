@@ -1,8 +1,8 @@
-import React, { Children } from "react";
+import React from "react";
 import Image from "next/image";
-import Button from "./Button";
+import { Button } from "./Button";
 
-export default function CardWithImage({
+export const CardWithImage = ({
   src,
   heading,
   paragraph,
@@ -11,9 +11,9 @@ export default function CardWithImage({
   children,
   width,
   height,
-}) {
+}) => {
   return (
-    <div className={cardStyles}>
+    <div className={`flex flex-col gap-6 ${cardStyles}`}>
       <Image
         src={src}
         alt=""
@@ -21,9 +21,15 @@ export default function CardWithImage({
         width={width}
         height={height}
       />
-      <h1 className="">{heading}</h1>
-      <p className="">{paragraph}</p>
-      <Button>{children}</Button>
+      <div className="flex flex-col md:w-full gap-6">
+        <h1 className="text-2xl font-semibold group-hover:text-lightBlue">
+          {heading}
+        </h1>
+        <p className="group-hover:text-lightBlue font-medium text-base">
+          {paragraph}
+        </p>
+        <Button>{children}</Button>
+      </div>
     </div>
   );
-}
+};

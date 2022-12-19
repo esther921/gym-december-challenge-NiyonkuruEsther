@@ -1,4 +1,4 @@
-export default function RectangleWithAnArrow({ fill, stroke }) {
+export const RectangleWithAnArrow = (fill, stroke) => {
   return (
     <svg
       width="20"
@@ -22,4 +22,4 @@ export default function RectangleWithAnArrow({ fill, stroke }) {
       />
     </svg>
   );
-}
+};

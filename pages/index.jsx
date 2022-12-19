@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Navbar } from "../components/layout/Navbar";
 // import Link from "next/link";
 // import Image from "next/legacy/image";
 import CardWithImageSection from "../components/sections/CardWithImageSection";
@@ -21,6 +22,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar />
 
       <CardWithImageSection />
 

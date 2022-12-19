@@ -5,7 +5,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        lightBlue: "#3070B3",
+        darkBlue: "#0E396E",
+        darkestBlue: "#072140",
+        mediumDarkBlue: "#0A2D57",
+      },
+      screens: {
+        ipad: "62.5rem",
+      },
+    },
   },
   plugins: [],
 };

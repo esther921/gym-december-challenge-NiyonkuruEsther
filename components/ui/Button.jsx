@@ -1,5 +1,11 @@
 import React from "react";
 
-export default function Button({ styles, children }) {
-  return <div className="border border-green-200">{children}</div>;
-}
+export const Button = ({ styles, children }) => {
+  return (
+    <div className={`w-full flex ${styles}`}>
+      <div className="border border-lightBlue hover:border-darkBlue text-lightBlue hover:text-darkBlue px-4 py-4 text-base font-semibold">
+        {children}
+      </div>
+    </div>
+  );
+};
