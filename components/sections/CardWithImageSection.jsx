@@ -25,7 +25,6 @@ export default function CardWithImageSection() {
               height={"256"}
               width={"342"}
               cardStyles={`group ${i == 0 ? " md:col-span-2 " : ""}`}
-              // imgStyles={}
             />
           );
         })}

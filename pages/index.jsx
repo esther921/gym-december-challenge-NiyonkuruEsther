@@ -1,19 +1,9 @@
 import Head from "next/head";
 import { Navbar } from "../components/layout/Navbar";
-// import Link from "next/link";
-// import Image from "next/legacy/image";
 import CardWithImageSection from "../components/sections/CardWithImageSection";
-// import { Inter } from "@next/font/google";
-
-// const inter = Inter({ subsets: ["latin"] });
+import { CardWithTextSection } from "../components/sections/CardWithTextSection";
 
 export default function Home() {
-  const menu = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "/contact" },
-  ];
   return (
     <>
       <Head>
@@ -23,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-
+      <CardWithTextSection />
       <CardWithImageSection />
 
       {/* <ul>
