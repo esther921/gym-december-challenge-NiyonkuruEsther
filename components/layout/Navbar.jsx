@@ -7,7 +7,7 @@ import Wrapper from "./Wrapper";
 
 export const Navbar = () => {
   return (
-    <div className=" w-screen fixed z-[1000] top-0 bg-darkestBlue lg:bg-darkestBlue  text-white">
+    <div className=" w-full fixed z-[1000] top-0 bg-darkestBlue lg:bg-darkestBlue  text-white">
       <Wrapper styles={"grid grid-cols-7 h-20 px-0"}>
         <div className="flex my-auto gap-3 ml-6 col-span-2">
           <div className="flex my-auto gap-4">

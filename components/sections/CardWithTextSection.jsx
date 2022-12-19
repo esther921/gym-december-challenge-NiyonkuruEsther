@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export const CardWithTextSection = () => {
   return (
-    <Wrapper styles={"mt-24 mb-24 "}>
+    <Wrapper styles={"mt-24 mb-24 text-darkestBlue"}>
       <div className="flex flex-col gap-24">
         {CARDWITHTEXTDATA.map((items, i) => {
           const { src, heading, paragraph, button } = items;
@@ -18,14 +18,14 @@ export const CardWithTextSection = () => {
                   <div className="text-3xl font-semibold text-darkestBlue ">
                     TUM in numbers
                   </div>
-                  <div className="grid grid-cols-5">
+                  <div className="grid md:grid-cols-5 gap-3">
                     <NumberTextCard
                       number={"50,000"}
                       paragraph={"Students"}
                       styles={
-                        "col-span-3 bg-lightBlue flex-col py-10 pl-12 -space-y-6 pb-16"
+                        "col-span-3 bg-lightBlue flex-col py-3 md:py-10 pl-12 -space-y-6 md:pb-16 w-[350px] md:w-full items-center"
                       }
-                      headingFontStyle={"text-9xl"}
+                      headingFontStyle={"text-7xl md:text-9xl"}
                       paragraphFontStyle={"text-3xl"}
                     />
                     <div className="col-span-2 grid grid-rows-2 gap-3.5">
@@ -33,19 +33,21 @@ export const CardWithTextSection = () => {
                         number={"176"}
                         paragraph={"ERC Grants for cutting-edge research"}
                         styles={
-                          "bg-[#f7b11e] px-5 pt-4 pb-5 gap-24 ml-6 text-darkestBlue"
+                          "bg-[#f7b11e] px-5 md:pt-4 pb-3 md:pb-5 md:gap-24 md:ml-6 text-darkestBlue gap-6 md:flex-row flex-col w-[350px] md:w-full items-center"
                         }
                         headingFontStyle={"text-7xl mt-6"}
-                        paragraphFontStyle={"text-xl mt-[40px]"}
+                        paragraphFontStyle={
+                          "text-xl md:mt-[40px] flex w-full justify-center items-center"
+                        }
                       />
                       <NumberTextCard
                         styles={
-                          "bg-[#b55ca5] px-5 pt-4 pb-5 ml-6 gap-36 text-darkestBlue"
+                          "bg-[#b55ca5] px-5 md:pt-4 pb-3 md:pb-5 md:flex-row flex-col md:ml-6 gap-3 md:gap-36 text-darkestBlue w-[350px] md:w-full items-center"
                         }
                         number={"18"}
                         paragraph={"Nobel laureates"}
                         headingFontStyle={"text-7xl mt-6"}
-                        paragraphFontStyle={"text-xl mt-[69px]"}
+                        paragraphFontStyle={"text-xl md:mt-[69px]"}
                       />
                     </div>
                   </div>
@@ -54,8 +56,8 @@ export const CardWithTextSection = () => {
             } else {
               return (
                 <div
-                  className={` xl:flex relative ${
-                    i % 2 === 0 ? " " : "flex-row-reverse"
+                  className={`flex flex-col xl:flex md:relative ${
+                    i % 2 === 0 ? " " : "md:flex-row-reverse"
                   }`}
                 >
                   <Image
@@ -72,10 +74,8 @@ export const CardWithTextSection = () => {
                     btnStyles={" w-fit bg-white mt-3"}
                     borderStyle={" border-none"}
                     children={button.toUpperCase()}
-                    cardStyles={`w-[688px] h-[335px] absolute flex flex-col gap-4 px-12 py-12 ${
-                      i === 0
-                        ? " bg-lightBlue bg-opacity-95 right-0 top-[15%]"
-                        : ""
+                    cardStyles={` w-[343px] md:w-[688px] h-[335px] md:absolute flex flex-col gap-4 px-12 py-12 ${
+                      i === 0 ? " bg-lightBlue  right-0 top-[15%]" : ""
                     } ${i === 2 ? " bg-[#8F81EA] right-0 top-[15%] " : ""}
                     ${i === 3 ? " bg-[#ea7237] left-0 top-[15%]" : ""}`}
                   />

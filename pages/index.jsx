@@ -1,7 +1,11 @@
 import Head from "next/head";
+import Footer from "../components/layout/footer";
 import { Navbar } from "../components/layout/Navbar";
 import CardWithImageSection from "../components/sections/CardWithImageSection";
 import { CardWithTextSection } from "../components/sections/CardWithTextSection";
+import { GivingSection } from "../components/sections/GivingSection";
+import { HeroSection } from "../components/sections/HeroSection";
+import { TMUNewsSection } from "../components/sections/TMUNewsSection";
 
 export default function Home() {
   return (
@@ -13,8 +17,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <HeroSection />
+      <TMUNewsSection />
       <CardWithTextSection />
       <CardWithImageSection />
+      <GivingSection />
+      <Footer />
 
       {/* <ul>
         {menu.map((item, i) => (

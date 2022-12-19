@@ -1,24 +1,15 @@
 export const RectangleWithAnArrow = (fill, stroke) => {
   return (
     <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M11.0244 2.4751L18.899 10.3497L11.0244 18.2243"
-        stroke={!stroke ? "#5602E0" : stroke}
-        strokeWidth="1.5"
-      />
-      <line
-        x1="18.8989"
-        y1="10.1997"
-        x2="-0.0001095"
-        y2="10.1997"
-        stroke={!stroke ? "#5602E0" : stroke}
-        strokeWidth="1.5"
+        d="M9 3v2H5v14h14v-4h2v6H3V3h6zm12 0v8h-2V6.414l-6.293 6.293-1.414-1.414L17.584 5H13V3h8z"
+        fill="%23ffffff"
+        fill-rule="nonzero"
       />
     </svg>
   );

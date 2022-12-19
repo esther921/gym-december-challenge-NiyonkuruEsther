@@ -10,7 +10,7 @@ export const CardWithText = ({
   borderStyle,
 }) => {
   return (
-    <div className={`${cardStyles} text-white`}>
+    <div className={`${cardStyles} text-white `}>
       <h1 className="text-2xl font-semibold">{heading}</h1>
       <p> {paragraph}</p>
       <Button styles={btnStyles} borderStyle={borderStyle}>

@@ -7,7 +7,7 @@ export default function CardWithImageSection() {
   return (
     <Wrapper>
       {/* mobile */}
-      <div className="flex flex-col gap-12 overflow-hidden md:grid ipad:grid-cols-3 ipad:gap-x-40 ipad:gap-y-12">
+      <div className="flex flex-col gap-12 overflow-hidden md:grid ipad:grid-cols-3 ipad:gap-x-40 ipad:gap-y-12 text-darkestBlue">
         {CARDWITHIMAGESDATA.map((items, i) => {
           const { src, heading, paragraph, button } = items;
           return (
