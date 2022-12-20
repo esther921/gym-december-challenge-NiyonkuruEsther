@@ -12,11 +12,12 @@ export const GivingSection = () => {
         talent.
       </p>
       <Button
-        children={"SUPPORT US"}
         styles={" flex w-full justify-center"}
         textStyle={"text-white"}
         borderStyle={"border-none bg-lightBlue"}
-      />
+      >
+        {"SUPPORT US"}
+      </Button>
     </Wrapper>
   );
 };

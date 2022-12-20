@@ -16,7 +16,6 @@ export default function CardWithImageSection() {
               src={src}
               heading={heading}
               paragraph={paragraph}
-              children={button}
               imgStyles={`min-w-[342px] ipad:w-full max-h-[180px]  min-h-[256px]  ${
                 i == 0 || 2
                   ? "scale-x-150  md:scale-x-100"
@@ -25,7 +24,9 @@ export default function CardWithImageSection() {
               height={"256"}
               width={"342"}
               cardStyles={`group ${i == 0 ? " md:col-span-2 " : ""}`}
-            />
+            >
+              {button}
+            </CardWithImage>
           );
         })}
       </div>

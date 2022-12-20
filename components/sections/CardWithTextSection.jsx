@@ -73,12 +73,13 @@ export const CardWithTextSection = () => {
                     paragraph={paragraph}
                     btnStyles={" w-fit bg-white mt-3"}
                     borderStyle={" border-none"}
-                    children={button.toUpperCase()}
                     cardStyles={` w-[343px] md:w-[688px] h-[335px] md:absolute flex flex-col gap-4 px-12 py-12 ${
                       i === 0 ? " bg-lightBlue  right-0 top-[15%]" : ""
                     } ${i === 2 ? " bg-[#8F81EA] right-0 top-[15%] " : ""}
                     ${i === 3 ? " bg-[#ea7237] left-0 top-[15%]" : ""}`}
-                  />
+                  >
+                    {button.toUpperCase()}
+                  </CardWithText>
                 </div>
               );
             }

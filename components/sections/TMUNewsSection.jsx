@@ -14,11 +14,9 @@ export const TMUNewsSection = () => {
             News, research results and events: everything that enthuses people
             at our university.
           </p>
-          <Button
-            children={"SEE ALL"}
-            borderStyle={"bg-lightBlue"}
-            textStyle={"text-white"}
-          />
+          <Button borderStyle={"bg-lightBlue"} textStyle={"text-white"}>
+            {"SEE ALL"}
+          </Button>
         </div>
         <div className="flex flex-col gap-y-12">
           <div className="flex flex-col md:flex-row gap-6">

@@ -1,8 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { DEPERTMENT } from "../../data/department";
-import { QUICKLINKS } from "../../data/department";
-import { ArrowPointingRight } from "../vectors/ArrowPointingRight";
+import { DEPERTMENT, QUICKLINKS } from "../../data/department";
 
 export default function Footer() {
   return (
