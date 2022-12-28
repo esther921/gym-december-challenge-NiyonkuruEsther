@@ -1,5 +1,5 @@
 import Head from "next/head";
-// import Footer from "../components/layout/footer";
+import Footer from "../components/layout/Footer";
 import { Navbar } from "../components/layout/Navbar";
 import CardWithImageSection from "../components/sections/CardWithImageSection";
 import { CardWithTextSection } from "../components/sections/CardWithTextSection";
@@ -22,7 +22,7 @@ export default function Home() {
       <CardWithTextSection />
       <CardWithImageSection />
       <GivingSection />
-      {/* <Footer />S */}
+      <Footer />
 
       {/* <ul>
         {menu.map((item, i) => (
