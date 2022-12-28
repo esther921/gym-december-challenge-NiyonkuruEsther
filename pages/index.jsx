@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Footer from "../components/layout/footer";
+// import Footer from "../components/layout/footer";
 import { Navbar } from "../components/layout/Navbar";
 import CardWithImageSection from "../components/sections/CardWithImageSection";
 import { CardWithTextSection } from "../components/sections/CardWithTextSection";
