@@ -22,7 +22,7 @@ export default function Home() {
       <CardWithTextSection />
       <CardWithImageSection />
       <GivingSection />
-      <Footer />
+      {/* <Footer />S */}
 
       {/* <ul>
         {menu.map((item, i) => (
