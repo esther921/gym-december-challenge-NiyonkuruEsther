@@ -1,6 +1,7 @@
-## The project name
+## TUM Cloning Challenge
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and the [`deployed version`]()
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and the [`deployed version`](https://gym-december-challenge-niyonkuru-esther.vercel.app/)
+It was done from 7:40 am to 6:50pm
 
 ## Getting Started
 
@@ -27,4 +28,3 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Netlify
